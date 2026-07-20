@@ -1,0 +1,114 @@
+/* ── BSB Brand Colour Tokens ─────────────────────────────────────────────── */
+:root {
+  --bsb-navy:    #161026;
+  --bsb-magenta: #BA335C;
+  --bsb-purple:  #87338B;
+  --bsb-orange:  #E2643A;
+  --bsb-steel:   #68637A;
+
+  --md-primary-fg-color:              var(--bsb-navy);
+  --md-primary-fg-color--light:       var(--bsb-purple);
+  --md-primary-fg-color--dark:        #0e0b1c;
+  --md-primary-bg-color:              #ffffff;
+  --md-accent-fg-color:               var(--bsb-orange);
+  --md-accent-fg-color--transparent:  rgba(226, 100, 58, 0.12);
+  --md-typeset-a-color:               var(--bsb-purple);
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────── */
+.md-header {
+  background-color: var(--bsb-navy);
+}
+
+.md-header__title {
+  font-weight: 600;
+}
+
+/* ── Navigation ──────────────────────────────────────────────────────────── */
+.md-nav__title {
+  color: var(--bsb-navy);
+  font-weight: 700;
+}
+
+.md-nav__link--active,
+.md-nav__link:is(:focus, :hover) {
+  color: var(--bsb-purple);
+}
+
+/* ── Admonitions: map default note/tip to BSB palette ───────────────────── */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--bsb-purple);
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(135, 51, 139, 0.10);
+}
+
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: var(--bsb-purple);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--bsb-orange);
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(226, 100, 58, 0.10);
+}
+
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+  background-color: var(--bsb-orange);
+}
+
+/* ── Tables ──────────────────────────────────────────────────────────────── */
+.md-typeset table:not([class]) th {
+  background-color: var(--bsb-navy);
+  color: #ffffff;
+}
+
+/* ── Footer ──────────────────────────────────────────────────────────────── */
+.md-footer {
+  background-color: var(--bsb-navy);
+}
+
+/* ── Headings ────────────────────────────────────────────────────────────── */
+.md-typeset h1 {
+  color: var(--bsb-orange);
+  font-weight: 600;
+}
+
+.md-typeset h2 {
+  color: var(--bsb-magenta);
+  font-weight: 600;
+}
+
+.md-typeset h3 {
+  color: var(--bsb-purple);
+  font-weight: 600;
+}
+
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: var(--bsb-steel);
+  font-weight: 600;
+}
+
+/* ── Search highlight ────────────────────────────────────────────────────── */
+.md-search-result mark {
+  background-color: rgba(226, 100, 58, 0.25);
+  color: inherit;
+}
+
+
+.md-content img[alt="INDUCE-seq Analysis Workflow"] {
+  width: 200% !important;
+  display: block;
+  margin: 0 auto;
+}
