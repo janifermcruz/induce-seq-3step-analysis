@@ -13,4 +13,5 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
-      - run: cd induce-seq-quickstart && mkdocs gh-deploy --force
+      - run: cd induce-seq-quickstart 
+      - run: mkdocs gh-deploy --force
